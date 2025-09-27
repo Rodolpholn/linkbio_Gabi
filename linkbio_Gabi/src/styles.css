@@ -1,0 +1,20 @@
+/* Este código deve ir no seu arquivo CSS global (styles.css ou styles.scss) */
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+  background-image: url('/LinkBio-2.0-Prisciane-Pereira.webp');
+  background-size: cover;
+
+  /* --- AJUSTE CHAVE AQUI --- */
+  background-position: center 10%; /* Move o fundo 20% para baixo a partir do topo */
+
+  background-attachment: fixed;
+  background-color: #000000;
+}

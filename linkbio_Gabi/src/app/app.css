@@ -1,0 +1,169 @@
+/* ================================== */
+/* Configuração do Body/Container Principal */
+/* ================================== */
+
+/* Define o escopo principal para preencher a tela e centralizar o conteúdo */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Opcional: define a largura máxima para o conteúdo principal */
+.main-wrapper {
+  width: 100%;
+  max-width: 600px; /* Mantém o conteúdo principal limitado a esta largura em telas maiores */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================================== */
+/* Hero Section (Banner) */
+/* ================================== */
+
+.hero-section {
+  width: 100%; /* Volta para 100% (ou max-width: 600px, dependendo da sua estrutura) */
+  max-width: 600px;
+
+  /* AJUSTES DE ALTURA REDUZIDOS */
+  min-height: 150px; /* Altura mínima para o topo, você pode ajustar este valor */
+  padding-top: 190px; /* Espaçamento para o card de perfil */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  align-self: center;
+}
+/* ================================== */
+/* Estilos do Card de Perfil Centralizado */
+/* ================================== */
+
+.profile-card {
+  /* Novo Layout: Foto à Esquerda, Nome à Direita */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinha verticalmente no centro */
+
+  margin-bottom: 20px;
+
+  /* Estilo do Card: Fundo escuro e Bordas Arredondadas */
+  background-color: rgba(57, 57, 57, 0.749); /* Fundo mais opaco */
+  padding: 10px 20px; /* Mais padding nas laterais */
+  border-radius: 12px; /* Cantos Arredondados */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  width: fit-content; /* O card só ocupa o espaço necessário */
+}
+.profile-photo-wrapper {
+  margin-right: 15px; /* Espaço entre a foto e o nome */
+}
+
+.profile-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.profile-info {
+  margin: 0;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 18px; /* Aumenta a fonte para destaque */
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 8px;
+}
+
+.profile-handle {
+  font-size: 14px;
+  color: #c0c0c0;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* ================================== */
+/* Estilos do Título "Links Importantes" */
+/* ================================== */
+
+.section-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c0c0c0;
+  margin-top: 5px;
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 13px;
+  z-index: 10;
+  line-height: 1; /* Força a altura da linha a ser mínima */
+  display: block; /* Garante que ele se comporte como um bloco completo, não como texto */
+}
+
+/* ================================== */
+/* Estilos dos Cards de Link */
+/* ================================== */
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px;
+
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 5px;
+
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.link-card {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 4px 8px rgba(255, 85, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 68, 0, 0.5);
+}
+
+.link-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  /* Reforça a remoção de margens para telas pequenas */
+  .section-title {
+    margin-top: 5px; /* Sobe o título um pouco mais */
+    margin-bottom: 0;
+  }
+
+  .links-section {
+    margin-top: 5px; /* Adiciona uma margem mínima para um pequeno respiro */
+    gap: 8px; /* Reduz o espaçamento entre os cards no mobile, se desejar */
+  }
+}
