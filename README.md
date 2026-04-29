@@ -1,59 +1,38 @@
-# LinkbioGabi
+# 🔗 LinkBio - Página de Links Personalizada
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+Aplicação web desenvolvida para centralizar múltiplos links em uma única página, facilitando o acesso e compartilhamento de conteúdos.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Sobre o projeto
 
-```bash
-ng serve
-```
+O **LinkBio** foi desenvolvido como solução simples e eficiente para perfis que precisam concentrar diversos links em um único local, semelhante ao modelo utilizado por criadores de conteúdo.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Funcionalidades
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+✔ Página responsiva  
+✔ Organização de links  
+✔ Interface simples e objetiva  
+✔ Design focado em usabilidade  
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Tecnologias
 
-```bash
-ng generate --help
-```
+- HTML  
+- CSS  
+- JavaScript  
 
-## Building
+---
 
-To build the project run:
+## 📈 Aplicação
 
-```bash
-ng build
-```
+Utilizado para centralizar links de redes sociais, contatos e conteúdos digitais.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 👨‍💻 Autor
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Arthur Rocha
